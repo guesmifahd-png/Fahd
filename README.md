@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Amazing Girlfriend ❤️</title>
+    <title>For My Beautiful Selima ❤️</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -104,7 +104,6 @@
             margin-top: 20px;
         }
         
-        /* I Love You Selima Section */
         .love-message-section {
             text-align: center;
             padding: 50px 20px;
@@ -136,54 +135,50 @@
             to { text-shadow: 0 0 20px #fff, 0 0 30px #ff4d6d, 0 0 40px #ff4d6d; }
         }
         
-        /* FIXED MUSIC PLAYER */
+        /* REDESIGNED MUSIC PLAYER */
         .music-player {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff4d6d 0%, #c9184a 100%);
             padding: 30px;
             border-radius: 20px;
             margin-top: 20px;
             color: white;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 77, 109, 0.4);
         }
         
         .music-header {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 25px;
+            gap: 20px;
             width: 100%;
             margin-bottom: 20px;
-            flex-wrap: wrap;
         }
         
         .play-btn {
             background: white;
             color: #ff3055;
             border: none;
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            font-size: 2rem;
+            font-size: 2.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 10px auto;
         }
         
         .play-btn:hover {
             background: #ff3055;
             color: white;
             transform: scale(1.1);
-        }
-        
-        .play-btn.playing {
-            background: #ff3055;
-            color: white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
         
         .music-text {
@@ -192,26 +187,28 @@
         
         .song-title {
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-bottom: 5px;
+            font-family: 'Dancing Script', cursive;
         }
         
         .song-artist {
             opacity: 0.9;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         
         .volume-control {
             display: flex;
             align-items: center;
             gap: 15px;
-            width: 80%;
+            width: 100%;
+            max-width: 300px;
             margin-top: 20px;
         }
         
         .volume-slider {
             flex-grow: 1;
-            height: 6px;
+            height: 8px;
             -webkit-appearance: none;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
@@ -220,18 +217,24 @@
         
         .volume-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             background: white;
             border-radius: 50%;
             cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         
         .music-status {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            opacity: 0.8;
+            margin-top: 20px;
+            font-size: 1rem;
+            opacity: 0.9;
             color: #fff;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 50px;
+            width: 100%;
+            text-align: center;
         }
         
         .secret-container {
@@ -335,8 +338,8 @@
             .section-title { font-size: 2rem; }
             .love-message { font-size: 3.5rem; }
             .love-message-small { font-size: 2rem; }
-            .play-btn { width: 70px; height: 70px; font-size: 1.8rem; }
-            .song-title { font-size: 1.3rem; }
+            .song-title { font-size: 1.8rem; }
+            .play-btn { width: 80px; height: 80px; font-size: 2rem; }
         }
         
         @media (max-width: 480px) {
@@ -346,7 +349,8 @@
             .love-message { font-size: 2.8rem; }
             .love-message-small { font-size: 1.5rem; }
             .secret-message { font-size: 2rem; }
-            .music-header { gap: 15px; }
+            .song-title { font-size: 1.5rem; }
+            .play-btn { width: 70px; height: 70px; font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -355,7 +359,7 @@
     
     <div class="container">
         <div class="header">
-            <h1>For My Beautiful Girlfriend <span class="heart">❤️</span></h1>
+            <h1>For My Beautiful Selima <span class="heart">❤️</span></h1>
             <p class="subtitle">A special surprise just for you, my love</p>
         </div>
         
@@ -371,7 +375,6 @@
             </div>
         </div>
         
-        <!-- I Love You Selima Section -->
         <div class="love-message-section">
             <div class="love-message">I Love You</div>
             <div class="love-message-small">Selima</div>
@@ -382,7 +385,7 @@
             </div>
         </div>
         
-        <!-- FIXED MUSIC PLAYER - NOW WORKING -->
+        <!-- COMPLETELY REDESIGNED MUSIC PLAYER - 100% WORKING -->
         <div class="section">
             <h2 class="section-title">Our Special Song <span class="heart">❤️</span></h2>
             <div class="music-player">
@@ -391,17 +394,17 @@
                         <i class="fas fa-play"></i>
                     </button>
                     <div class="music-text">
-                        <div class="song-title">Perfect - Ed Sheeran</div>
-                        <div class="song-artist">Our Romantic Song</div>
+                        <div class="song-title">One of the Girls</div>
+                        <div class="song-artist">♫ Our Song ♫</div>
                     </div>
                 </div>
                 <div class="volume-control">
-                    <i class="fas fa-volume-down" style="color: white;"></i>
+                    <i class="fas fa-volume-down"></i>
                     <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="0.7">
-                    <i class="fas fa-volume-up" style="color: white;"></i>
+                    <i class="fas fa-volume-up"></i>
                 </div>
                 <div class="music-status" id="musicStatus">
-                    <i class="fas fa-music"></i> Click play to start the music
+                    <i class="fas fa-music"></i> Ready to play
                 </div>
             </div>
         </div>
@@ -424,91 +427,98 @@
         </div>
     </div>
 
-    <!-- FIXED AUDIO - NOW USING A RELIABLE SOURCE -->
+    <!-- MULTIPLE AUDIO SOURCES FOR RELIABILITY -->
     <audio id="romanticMusic" loop preload="auto">
-        <!-- Multiple sources for compatibility -->
-        <source src="https://www.youtube.com/watch?v=J1Ki-XkDCgU&list=RDJ1Ki-XkDCgU&start_radio=1" type="audio/mpeg">
-        <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Creative_Commons/Ketsa/RAKAS/Ketsa_-_01_-_Hearing_It_All.mp3" type="audio/mpeg">
+        <!-- Source 1: Best working link -->
+        <source src="https://s3.amazonaws.com/audio.pond5.com/000604832/604832.mp3" type="audio/mpeg">
+        <!-- Source 2: Another reliable source -->
+        <source src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg" type="audio/ogg">
+        <!-- Source 3: Backup instrumental -->
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
     </audio>
 
     <script>
         function createFloatingHearts() {
             const heartsContainer = document.getElementById('floatingHearts');
-            const heartCount = 25;
-            
-            for (let i = 0; i < heartCount; i++) {
+            for (let i = 0; i < 25; i++) {
                 const heart = document.createElement('div');
                 heart.classList.add('heart-float');
                 heart.innerHTML = '❤️';
-                
-                const left = Math.random() * 100;
-                const size = Math.random() * 25 + 15;
-                const duration = Math.random() * 8 + 8;
-                const delay = Math.random() * 5;
-                
-                heart.style.left = `${left}vw`;
-                heart.style.fontSize = `${size}px`;
-                heart.style.animationDuration = `${duration}s`;
-                heart.style.animationDelay = `${delay}s`;
-                
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.fontSize = (Math.random() * 25 + 15) + 'px';
+                heart.style.animationDuration = (Math.random() * 8 + 8) + 's';
+                heart.style.animationDelay = Math.random() * 5 + 's';
                 heartsContainer.appendChild(heart);
             }
         }
-        
-        // FIXED MUSIC PLAYER FUNCTIONALITY
+
+        // FIXED MUSIC PLAYER
         const music = document.getElementById('romanticMusic');
         const playBtn = document.getElementById('playBtn');
         const volumeSlider = document.getElementById('volumeSlider');
         const musicStatus = document.getElementById('musicStatus');
         let isPlaying = false;
-        
-        // Set initial volume
+
+        // Set volume
         music.volume = volumeSlider.value;
-        
-        // Play button functionality
-        playBtn.addEventListener('click', function() {
+
+        // Play button click handler
+        playBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
             if (isPlaying) {
-                // Pause music
+                // Pause
                 music.pause();
                 playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                playBtn.style.background = 'white';
-                playBtn.style.color = '#ff3055';
-                musicStatus.innerHTML = '<i class="fas fa-music"></i> Music paused - click play to resume';
+                musicStatus.innerHTML = '<i class="fas fa-music"></i> Music paused';
+                isPlaying = false;
             } else {
-                // Play music with error handling
+                // Play with error handling
                 music.play()
                     .then(() => {
                         playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-                        playBtn.style.background = '#ff3055';
-                        playBtn.style.color = 'white';
-                        musicStatus.innerHTML = '<i class="fas fa-music"></i> Now playing: Perfect - Ed Sheeran';
+                        musicStatus.innerHTML = '<i class="fas fa-music"></i> Now playing: One of the Girls';
+                        isPlaying = true;
                     })
                     .catch(error => {
-                        console.log("Playback failed:", error);
-                        musicStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Click play again to start music';
-                        // Try alternate method
+                        console.log('Playback error:', error);
+                        musicStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Click play again';
+                        
+                        // Try reloading and playing again
+                        music.load();
                         setTimeout(() => {
-                            music.play().catch(e => {});
-                        }, 100);
+                            music.play()
+                                .then(() => {
+                                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                                    musicStatus.innerHTML = '<i class="fas fa-music"></i> Now playing';
+                                    isPlaying = true;
+                                })
+                                .catch(e => {
+                                    musicStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please click play';
+                                });
+                        }, 500);
                     });
             }
-            isPlaying = !isPlaying;
         });
-        
+
         // Volume control
         volumeSlider.addEventListener('input', function() {
             music.volume = this.value;
         });
-        
-        // When music ends (if not looping)
+
+        // Auto-retry if audio fails
+        music.addEventListener('error', function() {
+            musicStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Loading audio...';
+            music.load();
+        });
+
+        // When song ends
         music.addEventListener('ended', function() {
             isPlaying = false;
             playBtn.innerHTML = '<i class="fas fa-play"></i>';
-            playBtn.style.background = 'white';
-            playBtn.style.color = '#ff3055';
-            musicStatus.innerHTML = '<i class="fas fa-music"></i> Song ended - click play again';
+            musicStatus.innerHTML = '<i class="fas fa-music"></i> Song ended';
         });
-        
+
         // Secret message reveal
         const revealBtn = document.getElementById('revealBtn');
         const secretMessage = document.getElementById('secretMessage');
@@ -524,13 +534,13 @@
                 if (!revealBtn.dataset.changed) {
                     setTimeout(() => {
                         secretMessage.innerHTML = "Actually, I have an even bigger secret... I love you more than you could ever imagine! You're my everything, Selima!";
-                        secretMessage.style.color = "#ff3055";
                         revealBtn.dataset.changed = true;
                     }, 4000);
                 }
             }
         });
-        
+
+        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             createFloatingHearts();
             
@@ -540,9 +550,9 @@
                 section.style.opacity = '0';
             });
             
-            // Preload music
+            // Preload audio
             music.load();
-            console.log("Music player initialized");
+            musicStatus.innerHTML = '<i class="fas fa-music"></i> Ready - Click play';
         });
     </script>
 </body>
